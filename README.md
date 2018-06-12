@@ -21,7 +21,7 @@ Push your answer to this Github repo as a feature branch and create a pull reque
 ### Prerequisites
 * Java 1.8
 * Maven
-* cURL
+* cURL]
   
 ### Deployment
 If you whiz through this sample, try adding a deployment.   We are a Docker and AWS shop.  Getting something into an AWS or Heroku, or whatever you're comfortable with will be an "A+"
@@ -30,4 +30,9 @@ If you whiz through this sample, try adding a deployment.   We are a Docker and 
 * Stuck getting started?
   * The official Spring Boot "hello world" example is a great starting point.
 * Still need help?
-  * Further hints are available, Feel free to ask questions here.  Edit this file in your branch by adding to the questions section, push it, and we will update the file with answers. 
+  * Further hints are available, Feel free to ask questions here.  Edit this file in your branch by adding to the questions section, push it, and we will update the file with answers.
+  
+### Code update
+* Added a put method that takes in the new message of the day and stores it in a Display Message bean
+* Also added a docker file to build and run locally
+* Fixed the test code by changing what is expected. And added a new test for put method  

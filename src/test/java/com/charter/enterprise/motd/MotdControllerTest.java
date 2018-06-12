@@ -24,6 +24,15 @@ public class MotdControllerTest {
     public void getMotd() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Goodbye world!")));
+                .andExpect(content().string(equalTo("Welcome to Charter.  All systems are nominal.")));
+    }
+
+    @Test
+    public void setMotd() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.put("/message/This is a test"))
+                .andExpect(status().isOk());
+        mvc.perform(MockMvcRequestBuilders.get("/"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(equalTo("This is a test")));
     }
 }
